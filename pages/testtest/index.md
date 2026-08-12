@@ -2,7 +2,7 @@
 title: "テスト"
 description: "ああああ"
 order: 100
-draft: false
+draft: true
 eyebrow: "KAMEPOWER WORLD / GUIDE"
 heroLead: "あああ"
 credits: "かめっちイラスト：かふぇ"
