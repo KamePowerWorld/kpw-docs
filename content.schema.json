@@ -4,7 +4,7 @@
   "title": "KamePowerWorld documentation front matter",
   "type": "object",
   "additionalProperties": false,
-  "required": ["title", "description", "order", "draft", "eyebrow", "heroLead", "credits"],
+  "required": ["title", "description", "order", "draft", "eyebrow", "heroLead"],
   "properties": {
     "title": { "type": "string", "minLength": 1, "maxLength": 100 },
     "description": { "type": "string", "minLength": 1, "maxLength": 200 },
@@ -12,7 +12,6 @@
     "draft": { "type": "boolean" },
     "eyebrow": { "type": "string", "minLength": 1, "maxLength": 100 },
     "heroLead": { "type": "string", "minLength": 1, "maxLength": 160 },
-    "heroImage": { "type": "string", "pattern": "^\\./assets/[A-Za-z0-9._-]+$" },
-    "credits": { "type": "string", "minLength": 1, "maxLength": 200 }
+    "heroImage": { "type": "string", "pattern": "^\\./assets/[A-Za-z0-9._-]+$" }
   }
 }

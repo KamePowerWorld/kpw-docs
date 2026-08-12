@@ -5,7 +5,6 @@ order: 10
 draft: false
 eyebrow: KAMEPOWER WORLD / GUIDE
 heroLead: 今日なにして遊ぶ？が見つかるページ。
-credits: かめっちイラスト：かふぇ
 ---
 
 # かめぱわぁ〜るど 遊びかたガイド

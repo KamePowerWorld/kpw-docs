@@ -6,7 +6,6 @@ draft: false
 eyebrow: KAMEPOWER WORLD / 2026 SERVER
 heroLead: 遊んで貯める、ポイ活スローライフ。
 heroImage: ./assets/image-1.png
-credits: サムネ画像：しぐ ／ かめっちイラスト：かふぇ
 ---
 
 # 2026 ポイ活生活鯖
