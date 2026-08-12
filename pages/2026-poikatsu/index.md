@@ -155,6 +155,4 @@ heroImage: ./assets/image-1.png
 
 ---
 
-サムネ画像制作：しぐ
-
 [元のNotionページを見る](https://app.notion.com/p/3769951c9453807886ebca756e11838d)
