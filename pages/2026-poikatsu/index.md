@@ -1,9 +1,7 @@
 ---
+id: cad50ce0-15f4-4d04-8e5b-74950c59fe47
 title: 2026 ポイ活生活鯖
-description: 遊んで貯める、ポイ活スローライフ。2026年かめぱわぁ〜るど生活鯖の遊び方。
-order: 20
 draft: false
-eyebrow: KAMEPOWER WORLD / 2026 SERVER
 heroLead: 遊んで貯める、ポイ活スローライフ。
 heroImage: ./assets/image-1.png
 ---

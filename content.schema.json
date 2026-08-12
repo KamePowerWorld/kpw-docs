@@ -4,14 +4,17 @@
   "title": "KamePowerWorld documentation front matter",
   "type": "object",
   "additionalProperties": false,
-  "required": ["title", "description", "order", "draft", "eyebrow", "heroLead"],
+  "required": ["id", "title", "draft", "heroLead"],
   "properties": {
+    "id": { "type": "string", "format": "uuid" },
     "title": { "type": "string", "minLength": 1, "maxLength": 100 },
-    "description": { "type": "string", "minLength": 1, "maxLength": 200 },
-    "order": { "type": "integer", "minimum": 0 },
     "draft": { "type": "boolean" },
-    "eyebrow": { "type": "string", "minLength": 1, "maxLength": 100 },
     "heroLead": { "type": "string", "minLength": 1, "maxLength": 160 },
-    "heroImage": { "type": "string", "pattern": "^\\./assets/[A-Za-z0-9._-]+$" }
+    "heroImage": { "type": "string", "pattern": "^\\./assets/[A-Za-z0-9._-]+$" },
+    "aliases": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": { "type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$" }
+    }
   }
 }

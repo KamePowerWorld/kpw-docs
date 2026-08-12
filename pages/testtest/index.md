@@ -1,9 +1,7 @@
 ---
+id: 29b1b24f-7a2a-422e-86c3-38cd942715f1
 title: "テスト"
-description: "ああああ"
-order: 100
 draft: true
-eyebrow: "KAMEPOWER WORLD / GUIDE"
 heroLead: "あああ"
 ---
 
