@@ -16,3 +16,7 @@ aliases:
 DiscordでVCで集まってわいわい遊んでいます！
 
 > 迷ったら、まずは気になるイベントにふらっと参加でOK。見学だけでも大歓迎！
+
+<br />
+
+![1.00](blob:https://docs.kamesuta.com/05f7ef14-c375-465d-b82c-112d1203720e)
