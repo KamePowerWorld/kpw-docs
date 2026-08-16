@@ -1,0 +1,20 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/KamePowerWorld/kpw-docs/content.schema.json",
+  "title": "KamePowerWorld documentation front matter",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["id", "title", "draft", "heroLead"],
+  "properties": {
+    "id": { "type": "string", "format": "uuid" },
+    "title": { "type": "string", "minLength": 1, "maxLength": 100 },
+    "draft": { "type": "boolean" },
+    "heroLead": { "type": "string", "minLength": 1, "maxLength": 160 },
+    "heroImage": { "type": "string", "pattern": "^\\./assets/[A-Za-z0-9._-]+$" },
+    "aliases": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": { "type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$" }
+    }
+  }
+}

@@ -1,0 +1,29 @@
+name: Check content
+
+on:
+  pull_request_target:
+    types: [opened, synchronize, reopened]
+  push:
+    branches: [master]
+
+permissions:
+  contents: read
+  pull-requests: write
+
+jobs:
+  preview:
+    if: github.event_name == 'pull_request_target'
+    uses: KamePowerWorld/kpw-web/.github/workflows/preview.yml@master
+    with:
+      docs-repository: ${{ github.event.pull_request.head.repo.full_name }}
+      docs-ref: ${{ github.event.pull_request.head.sha }}
+      pull-request: ${{ github.event.pull_request.number }}
+    secrets: inherit
+
+  publish:
+    if: github.event_name == 'push'
+    uses: KamePowerWorld/kpw-web/.github/workflows/publish.yml@master
+    with:
+      docs-repository: KamePowerWorld/kpw-docs
+      docs-ref: ${{ github.sha }}
+    secrets: inherit
